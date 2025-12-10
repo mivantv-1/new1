@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Иван Мелехин</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Шапка -->
+  <header>
+    <nav>
+      <ul class="tabs">
+        <li class="tab active" data-tab="about">Обо мне</li>
+        <li class="tab" data-tab="projects">Проекты</li>
+        <li class="tab" data-tab="news">Новости</li>
+        <li class="tab" data-tab="contacts">Контакты</li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Основной контент -->
+  <main>
+    <!-- Обо мне -->
+    <section id="about" class="tab-content active">
+      <div class="about-grid">
+        <div class="text-block">
+          <h2>Иван Мелехин</h2>
+          <p><strong>Специалист по подбору, развитию персонала и организации HR-событий.</strong></p>
+          <p>Здравствуйте, меня зовут Иван Мелехин, я консультант по подбору персонала уже более 8 лет помогаю компаниям находить и нанимать талантливых и перспективных сотрудников из числа студентов ВУЗов и колледжей Петербурга. Организую конференции, семинары, круглые столы на тему HR и HR-tech, а также конкурсы проф. мастерства, тренинги, экскурсии и мастер-классы для студентов на предприятия Северной столицы.</p>
+        </div>
+        <div class="slider-container">
+          <img src="Img/ivan-melekhin-1.jpg" class="slider-img active" alt="HR событие">
+          <img src="Img/ivan-melekhin-2.jpg" class="slider-img" alt="Работа в команде">
+          <img src="Img/ivan-melekhin-3.JPG" class="slider-img" alt="Студенты">
+
+          <!-- Кнопки навигации -->
+          <button class="slider-btn prev">‹</button>
+          <button class="slider-btn next">›</button>
+
+          <!-- Индикаторы -->
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="tab-content">
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="Img/konkurs.jpg" alt="Конкурсы профмастерства">
+      <h3>Конкурсы проф. мастерства для студентов</h3>
+    </div>
+    <div class="project-card">
+      <img src="Img/events.jpg" alt="HR-конференции">
+      <h3>Конференции и круглые столы по теме HR</h3>
+    </div>
+    <div class="project-card">
+      <img src="Img/talants.jpg" alt="Поиск талантов">
+      <h3>Поиск талантов</h3>
+    </div>
+  </div>
+</section>
+
+    <!-- Новости -->
+    <section id="news" class="tab-content">
+      <ul class="news-list">
+        <li class="news-item">
+          <img src="Img/vektor.webp" alt="Вектор развития">
+          <div class="news-item-text">
+            <h3>Сверил Вектор развития</h3>
+            <p>Посетил конкурс коммуникационных проектов “Вектор развития” от росатомовского АЭМ-технологии и проф. объединения «InterComm». <a href="index_news1.html" target="index_news1.html">узнать подробнее</a>.</p>
+          </div>
+        </li>
+        <li class="news-item">
+          <img src="Img/pitch.jpg" alt="HR-Tech Day VI">
+          <div class="news-item-text">
+            <h3>Питчи под солнцем: HR-Tech Day VI</h3>
+            <p>27 июня вместе с SPbfounders провели HR-Tech Day VI на берегу Финского залива. <a href="#">узнать подробнее</a>.</p>
+          </div>
+        </li>
+        <li class="news-item">
+          <img src="Img/gvozdi-3.jpg" alt="Гвоздестояние">
+          <div class="news-item-text">
+            <h3>Бой выгоранию — стоим на гвоздях</h3>
+            <p>Организовал сеанс гвоздестояния для сотрудников АО Армалит. <a href="#">узнать подробнее</a>.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="tab-content">
+      <div class="contacts">
+        <div class="contact-info">
+          <h3>Связаться со мной:</h3>
+          <ul>
+            <li>+7 (999) 999 99 99</li>
+            <li>mivan_1984@mail.ru</li>
+            <li>@ivan_melekhin</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Напишите мне</h3>
+          <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="4" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+        <!-- Футер -->
+    <footer class="site-footer">
+  © ИВАН МЕЛЕХИН 2025
+    </footer>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
